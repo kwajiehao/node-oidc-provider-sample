@@ -1,0 +1,4 @@
+.env
+*jwks.json
+build/
+node_modules/

@@ -1,0 +1,12 @@
+{
+    "TableName": "ogpass-oidc-provider",
+    "Item": {
+        "modelId": {
+            "S": "Client-ISOMER-TEST"
+        },
+        "payload": {
+            "S": "{\"application_type\":\"web\",\"authorization_signed_response_alg\":\"PS256\",\"client_id\":\"ISOMER-TEST\",\"client_secret\":\"$2b$10$0aKwY6Up3fPfUdjjp.eP7Oxw3q0OuQhWqy3iaI5ZThsLThZIMeD3m\",\"contacts\":[],\"grant_types\":[\"authorization_code\"],\"id_token_signed_response_alg\":\"PS256\",\"introspection_signed_response_alg\":\"PS256\",\"jwks\":{\"keys\":[{\"kty\":\"RSA\",\"kid\":\"UiY6d2RFQ1aXDDOO_ueI_jdW0JsRtUjccnijIhUsfiI\",\"use\":\"sig\",\"alg\":\"PS256\",\"e\":\"AQAB\",\"n\":\"wmf1pREYKCfgyhsvoQumRqqvuMPvBJl1POvUFAQxLdf6KqgSclC_95nscKAS19zpuU5UcEriekX3ZAFS8YFQFhK8nqvYs8dtItN2epRZ3FhjG6j_zQBwJvjJe8b7bfyLjxC4dc8IaIeYy3HoC42qf2ZLBlKjMECegDwpRYGskXatOhJb9PNPy2koWnP4jbQ3gP_ei3HmlgWYSvA5CNmoRTSKQVEs7jrBNmnt6G8fWaPncKryRAgW8FoIpQIfaNr2LkwC_YBK7ijqOAd3BsopBg6wHXzISP9NFbIdOMc7i9syzp7xz4JsxmhIOrk70OcM0nNvm47jQUdfDrZTMiS_xw\"}]},\"redirect_uris\":[\"http://localhost:8081/auth\"],\"require_auth_time\":false,\"response_types\":[\"code\"],\"scope\":\"openid myinfo.name\",\"subject_type\":\"public\",\"token_endpoint_auth_method\":\"none\",\"userinfo_signed_response_alg\":\"PS256\"}"
+        }
+    }
+}
+

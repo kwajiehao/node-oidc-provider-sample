@@ -1,0 +1,11 @@
+{
+	"TableName": "<client table name>",
+	"Item": {
+		"modelId": {
+			"S": "Client-<client name>"
+		},
+        "payload": {
+            "S": "<node-oidc-provider payload>"
+        }
+	}
+}

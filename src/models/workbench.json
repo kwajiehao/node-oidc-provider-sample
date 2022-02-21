@@ -1,0 +1,61 @@
+{
+    "ModelName": "OGPass local",
+    "ModelMetadata": {
+      "Author": "",
+      "DateCreated": "Jan 24, 2022, 10:24 PM",
+      "DateLastModified": "Jan 24, 2022, 10:24 PM",
+      "Description": "",
+      "Version": "1.0"
+    },
+    "DataModel": [
+      {
+        "TableName": "ogpass-user",
+        "KeyAttributes": {
+          "PartitionKey": {
+            "AttributeName": "govEmail",
+            "AttributeType": "S"
+          }
+        },
+        "NonKeyAttributes": [
+            {
+                "AttributeName": "userData",
+                "AttributeType": "M"
+            },
+            {
+                "AttributeName": "ssoSessionId",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "sub",
+                "AttributeType": "S"
+            }
+        ],
+        "DataAccess": {
+          "MySql": {}
+        }
+      },
+      {
+        "TableName": "ogpass-sso-session",
+        "KeyAttributes": {
+          "PartitionKey": {
+            "AttributeName": "uuid",
+            "AttributeType": "S"
+          }
+        },
+        "NonKeyAttributes": [
+          {
+            "AttributeName": "sessionState",
+            "AttributeType": "S"
+          },
+          {
+            "AttributeName": "ttl",
+            "AttributeType": "N"
+          }
+        ],
+        "DataAccess": {
+          "MySql": {}
+        }
+      }
+    ]
+  }
+  
